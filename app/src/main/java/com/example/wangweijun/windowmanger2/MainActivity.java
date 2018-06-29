@@ -3,15 +3,20 @@ package com.example.wangweijun.windowmanger2;
 import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
@@ -48,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        List<PackageInfo> packages = getPackageManager().getInstalledPackages(0);
+        for (PackageInfo info : packages) {
+            Log.i("wangweijun", info.toString());
+        }
+
     }
 
     @Override
