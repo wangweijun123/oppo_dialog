@@ -53,14 +53,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-        List<PackageInfo> packages = getPackageManager().getInstalledPackages(0);
-        for (PackageInfo info : packages) {
-            Log.i("wangweijun", info.toString());
-        }
-
     }
+
+
+    public void moveBtn(View v) {
+        startActivity(new Intent(getApplicationContext(), FloatActivity.class));
+    }
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
