@@ -48,9 +48,11 @@ public class FloatWindow implements View.OnTouchListener {
         mWindowParams.format = PixelFormat.RGBA_8888;
         mWindowParams.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
         mWindowParams.gravity = Gravity.START | Gravity.TOP;
-        mWindowParams.width = WindowManager.LayoutParams.WRAP_CONTENT;
+        mWindowParams.width = WindowManager.LayoutParams.MATCH_PARENT;
         mWindowParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
     }
+
+
 
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -80,7 +82,8 @@ public class FloatWindow implements View.OnTouchListener {
                 mWindowManager.updateViewLayout(mFloatLayout, mWindowParams);
                 break;
             case MotionEvent.ACTION_UP:
-                // 如果手指离开屏幕时，xDownInScreen和xInScreen相等，且yDownInScreen和yInScreen相等，则视为触发了单击事件。
+                // 如果手指离开屏幕时，xDownInScreen和xInScreen相等，
+                // 且yDownInScreen和yInScreen相等，则视为触发了单击事件。
                 if (mDownInScreenX  == mInScreenX && mDownInScreenY == mInScreenY){
 
                 }

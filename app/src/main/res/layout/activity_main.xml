@@ -8,8 +8,20 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="悬浮窗"
+        android:text="显示悬浮窗"
         android:id="@+id/button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹出toast"
+        android:onClick="showToast"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="隐藏悬浮窗"
+        android:onClick="hideFloatwindow"/>
 
 
     <Button
@@ -18,4 +30,28 @@
         android:onClick="moveBtn"
         android:text="移动按钮"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addFloatView"
+        android:text="添加悬浮窗"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addFloatView2"
+        android:text="添加悬浮窗2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deleteFloatView2"
+        android:text="删除悬浮窗2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="movefloat"
+        android:text="移动悬浮窗"
+        android:layout_marginTop="100dp"/>
 </LinearLayout>

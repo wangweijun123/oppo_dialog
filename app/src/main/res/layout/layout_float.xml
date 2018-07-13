@@ -1,17 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="200dp"
-    android:layout_height="200dp"
-    android:background="#ff0000">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"
+    > <!-- android:background="#9000" -->
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#80ffffff"
+        />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:background="#ff00ff"
+        android:id="@+id/bg_container">
+        <TextView
+            android:id="@+id/clickMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click me" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+        <!-- test data start -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/icon_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头号玩家"
+                android:layout_toRightOf="@id/icon_image"
+                android:id="@+id/title_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.5"
+                android:layout_toRightOf="@id/icon_image"
+                android:layout_below="@id/title_text"
+                android:id="@+id/score_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主演: 协议单,徐克，对对对等等的的撒打发第三方按地方撒水电费顶顶顶顶对对对的点点滴滴 对对对大师傅"
+                android:maxLines="2"
+                android:layout_toRightOf="@id/icon_image"
+                android:layout_below="@id/score_text"
+                android:id="@+id/desc_text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_image">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="预告片"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="购票"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/icon_image2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头号玩家"
+                android:layout_toRightOf="@id/icon_image2"
+                android:id="@+id/title_text2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.5"
+                android:layout_toRightOf="@id/icon_image2"
+                android:layout_below="@id/title_text2"
+                android:id="@+id/score_text2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主演: 协议单,徐克，对对对等等的的撒打发第三方按地方撒水电费顶顶顶顶对对对的点点滴滴 对对对大师傅"
+                android:maxLines="2"
+                android:layout_toRightOf="@id/icon_image2"
+                android:layout_below="@id/score_text2"
+                android:id="@+id/desc_text2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_image2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="预告片"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="购票"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/icon_image3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头号玩家"
+                android:layout_toRightOf="@id/icon_image3"
+                android:id="@+id/title_text3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.5"
+                android:layout_toRightOf="@id/icon_image3"
+                android:layout_below="@id/title_text3"
+                android:id="@+id/score_text3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主演: 协议单,徐克，对对对等等的的撒打发第三方按地方撒水电费顶顶顶顶对对对的点点滴滴 对对对大师傅"
+                android:maxLines="2"
+                android:layout_toRightOf="@id/icon_image3"
+                android:layout_below="@id/score_text3"
+                android:id="@+id/desc_text3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_image3">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="预告片"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="购票"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!-- test data end -->
+    </LinearLayout>
 
 </LinearLayout>
